@@ -7,6 +7,13 @@ else
   cp -r nvim ~/.config/nvim
 fi
 
+if [ -d ~/.config/tmux-powerline ]; then
+  echo "📋 ~/.config/tmux-powerline exists. Leaving alone"
+else
+  echo "📋 ~/.config/tmux-powerline does not exist. Copying."
+  cp -r tmux-powerline ~/.config/tmux-powerline
+fi
+
 if [ -f ~/.tmux.conf ]; then
   echo "📋 ~/.tmux.conf exists. Leaving alone"
 else
