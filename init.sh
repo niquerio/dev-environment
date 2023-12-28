@@ -7,6 +7,13 @@ else
   cp -r nvim ~/.config/nvim
 fi
 
+if [ -d ~/.config/powerline-shell ]; then
+  echo "📋 ~/.config/powerline-shell exists. Leaving alone"
+else
+  echo "📋 ~/.config/powerline-shell does not exist. Copying."
+  cp -r powerline-shell ~/.config/powerline-shell
+fi
+
 if [ -d ~/.config/tmux-powerline ]; then
   echo "📋 ~/.config/tmux-powerline exists. Leaving alone"
 else
