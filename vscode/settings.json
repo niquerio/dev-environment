@@ -1,0 +1,102 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark (Hard)",
+    "vim.handleKeys": {
+        "<C-p>": false,
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ],
+            "when": "editortextfocus && !editorreadonly"
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ],
+            "when": "editortextfocus && !editorreadonly"
+        }
+    ],
+    "git.confirmSync": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "update.showReleaseNotes": false,
+    "editor.fontFamily": "'CaskaydiaCove NF Light', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "[bash]": {
+        "editor.tabSize": 2
+    },
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.silentNotifications": false,
+    "zenMode.hideStatusBar": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "zenMode.restore": false,
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
+    },
+    "filterText.commandList": [
+        {
+            "name": "Boxes Shell (create)",
+            "description": "Add a 'shell' box around selected text",
+            "command": "boxes -d shell -p h1 -s 80 -i none -n UTF-8"
+        },
+        {
+            "name": "Boxes Shell (mend)",
+            "description": "Repair a 'shell' box",
+            "command": "boxes -d shell -p h1 -s 80 -i none -n UTF-8 -m"
+        },
+    ],
+    "redhat.telemetry.enabled": false,
+    "autoDocstring.startOnNewLine": true
+}
